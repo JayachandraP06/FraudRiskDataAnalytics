@@ -1,0 +1,9 @@
+{
+	"name": "fraudanalyticaldatafactory",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b98d785e-999a-4311-a6e7-eeb8637b13b7",
+		"tenantId": "f59423ee-3c8f-4990-b592-278c52754f41"
+	}
+}
