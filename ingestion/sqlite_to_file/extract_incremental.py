@@ -1,0 +1,1 @@
+# Incremental extract from SQLite
