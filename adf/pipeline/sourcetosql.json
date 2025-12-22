@@ -35,6 +35,152 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "transaction_date",
+									"type": "Date",
+									"physicalType": "date"
+								}
+							},
+							{
+								"source": {
+									"name": "client_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "client_id",
+									"type": "Int64",
+									"physicalType": "bigint"
+								}
+							},
+							{
+								"source": {
+									"name": "card_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "card_id",
+									"type": "Int64",
+									"physicalType": "bigint"
+								}
+							},
+							{
+								"source": {
+									"name": "amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "amount",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "use_chip",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "use_chip",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "merchant_id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "merchant_id",
+									"type": "Int64",
+									"physicalType": "bigint"
+								}
+							},
+							{
+								"source": {
+									"name": "merchant_city",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "merchant_city",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "merchant_state",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "merchant_state",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "zip",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "zip",
+									"type": "Double",
+									"physicalType": "float"
+								}
+							},
+							{
+								"source": {
+									"name": "mcc",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "mcc",
+									"type": "Int64",
+									"physicalType": "bigint"
+								}
+							},
+							{
+								"source": {
+									"name": "errors",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "errors",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "id",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ID",
+									"type": "Int64",
+									"physicalType": "bigint"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
