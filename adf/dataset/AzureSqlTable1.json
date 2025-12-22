@@ -1,0 +1,68 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "transaction_date",
+				"type": "date"
+			},
+			{
+				"name": "client_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "card_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "amount",
+				"type": "decimal",
+				"precision": 12,
+				"scale": 2
+			},
+			{
+				"name": "use_chip",
+				"type": "varchar"
+			},
+			{
+				"name": "merchant_id",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "merchant_city",
+				"type": "varchar"
+			},
+			{
+				"name": "merchant_state",
+				"type": "varchar"
+			},
+			{
+				"name": "zip",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "mcc",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "errors",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "card_transactions"
+		}
+	}
+}

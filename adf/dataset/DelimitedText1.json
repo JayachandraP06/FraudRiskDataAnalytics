@@ -1,0 +1,72 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "transactions_data.csv",
+				"container": "source-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "date",
+				"type": "String"
+			},
+			{
+				"name": "client_id",
+				"type": "String"
+			},
+			{
+				"name": "card_id",
+				"type": "String"
+			},
+			{
+				"name": "amount",
+				"type": "String"
+			},
+			{
+				"name": "use_chip",
+				"type": "String"
+			},
+			{
+				"name": "merchant_id",
+				"type": "String"
+			},
+			{
+				"name": "merchant_city",
+				"type": "String"
+			},
+			{
+				"name": "merchant_state",
+				"type": "String"
+			},
+			{
+				"name": "zip",
+				"type": "String"
+			},
+			{
+				"name": "mcc",
+				"type": "String"
+			},
+			{
+				"name": "errors",
+				"type": "String"
+			}
+		]
+	}
+}
