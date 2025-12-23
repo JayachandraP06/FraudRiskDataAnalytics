@@ -80,7 +80,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "select * from transactions_data where transaction_date>'@{activity('LookupOldWatermark').output.firstRow.WatermarkValue}' and transaction_date<='@{activity('LookupNewWatermark').output.firstRow.Watermark}'",
+							"value": "select * from transactions_data where transaction_date>'@{activity('LookupOldWatermark').output.firstRow.WatermarkValue}' and transaction_date<='@{activity('LookupNewWatermark').output.firstRow.newWatermark}'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
